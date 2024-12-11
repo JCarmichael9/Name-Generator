@@ -26,7 +26,7 @@
         <main>
             <div class="container">
                 <!--Instrructions-->
-                <div class="text-center mb-4">
+                <div class="text-center my-5">
                     <h1>Fantasy Name Generator</h1>
                     <p>Fill out the form below to generate your fantasy name!</p>
                 </div>
@@ -42,20 +42,36 @@
                         <label for="lastName" class="form-label">Last Name</label>
                         <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
                     </div>
-                     <!--get first name-->
+                     <!--get favorite color-->
                     <div class="mb-3">       
                         <label for="favColor" class="form-label">Favorite Color</label>
                         <input type="text" class="form-control" id="favColor" placeholder="Enter your favorite color">
                     </div>
-                     <!--get first name-->
+                     <!--get Favorite Animal-->
                     <div class="mb-3">       
                         <label for="favAnimal" class="form-label">Favorite Animal</label>
                         <input type="text" class="form-control" id="favAnimal" placeholder="Enter your favorite animal">
                     </div>
-
-
-                    
+                    <!-- get road type-->
+                    <div class="mb-3">       
+                        <label for="roadType" class="form-label">Choose Road Type</label>
+                        <select id="roadType" class="form-select">
+                            <option value="road">Road</option>
+                            <option value="street">Street</option>
+                            <option value="drive">Drive</option>
+                            <option value="avenue">Avenue</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <!--submit button-->
+                    <button type="submit" class="btn btn-primary w-100">Generate Name</button>
                 </form>
+                <!--generated output-->
+                <div class="result" id="result">
+
+                </div>
+
+
             </div>
         </main>
         <footer>
