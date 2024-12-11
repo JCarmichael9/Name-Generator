@@ -1,0 +1,18 @@
+.btn {
+    color: #000000;
+    border: 3px solid #00bdf7;
+    background-image: -webkit-linear-gradient(30deg, #00bdf7 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #00bdf7 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+  }
+  .btn:hover {
+    background-position: 100%;
+    color: #00bdf7;
+  }
+  body {
+    background-color: black;
+  }
