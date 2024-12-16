@@ -64,22 +64,26 @@ function genFirstName(firstName) {
 
 //generate middle name//
 function genMiddleName(roadType, favColor) {
-    if (roadType === 'road') {
-        return `${favColor}ridge` //ex blueridge
-    } else if (roadType === 'street') {
-        return `${favColor}son` //ex blueson
-    } else if (roadType === 'drive') {
-        return `${favColor}man` //ex blueman
-    } else if (roadType === 'avenue') {
-        return `${favColor}berry` //ex blueberry
-    } else if (roadType === 'other') {
-        return `${favColor}buddy` //ex bluebuddy
+    switch (roadType) {
+        case 'road':
+            return `${favColor}ridge`; // ex: blueridge
+        case 'street':
+            return `${favColor}son`; // ex: blueson
+        case 'drive':
+            return `${favColor}man`; // ex: blueman
+        case 'avenue':
+            return `${favColor}berry`; // ex: blueberry
+        case 'other':
+            return `${favColor}buddy`; // ex: bluebuddy
+        default:
+            return ''; // or some other default value if needed
     }
+
 }
 
 //gen last name//
 function genLastName(lastName) {
-    const lastName = lastName.charAt(lastName.length - 1)
+    const lastLetter = lastName.charAt(lastName.length - 1)
     if (lastLetter === 'a') {
         return 'Storm'
     } else if (lastLetter === 'b') {
@@ -107,31 +111,31 @@ function genLastName(lastName) {
     } else if (lastLetter === 'm') {
         return 'Pluto'
     } else if (lastLetter === 'n') {
-        return ''
+        return 'Cloud'
     } else if (lastLetter === 'o') {
-        return ''
+        return 'Isometric'
     } else if (lastLetter === 'p') {
-        return ''
+        return 'Sky'
     } else if (lastLetter === 'q') {
-        return ''
+        return 'Awais'
     } else if (lastLetter === 'r') {
-        return ''
+        return 'SkootleBob'
     } else if (lastLetter === 's') {
-        return ''
+        return 'Skuttlebutt'
     } else if (lastLetter === 't') {
-        return ''
+        return 'DoodleBob'
     } else if (lastLetter === 'u') {
-        return ''
+        return 'Jerry'
     } else if (lastLetter === 'v') {
-        return ''
+        return 'McBadGuy'
     } else if (lastLetter === 'w') {
-        return ''
+        return '(Son of Batman)'
     } else if (lastLetter === 'x') {
-        return ''
+        return 'Robbery'
     } else if (lastLetter === 'y') {
-        return ''
+        return 'Arson'
     } else if (lastLetter === 'z') {
-        return ''
+        return 'Mangione'
     }
 }
 
@@ -160,8 +164,9 @@ function genFullName() {
     const capitalizedMiddleName = capitalize(middleName)
     const capitalizedLastName = capitalize(newLastName)
     //combine all the name variables into a full sentence//
-
+    const fullName = `${capitalizedPrefix} ${capitalizedFirstName} ${capitalizedMiddleName} ${capitalizedLastName} ${suffix}`
     //display new name//
+    document.getElementById('result').textContent = fullName
 }
 //capitalize function//
 function capitalize(input) {
