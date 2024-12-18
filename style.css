@@ -48,22 +48,38 @@ h2 {
   margin-left: 5vw;
 }
 
-input[type="text"]
-{
-    font-size:24px;
-    font-family: "wreath", serif;
-    font-weight: 700;
-    font-style: normal;
+input[type="text"] {
+  font-size: 24px;
+  font-family: "wreath", serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
+.form-label {
+  font-size: 24px;
+  font-family: "wreath", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+select[type="form-select"] {
+  font-size: 24px;
+  font-family: "wreath", serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
 
 /*christmas lights that i copied from https://www.balbooa.com/help/tutorials/coding/interactions/christmas-lights-animation*/
-}
+
 
 .christmas-lights li {
-  --christmas-lights-1: #057d70; /*color - 1*/
-  --christmas-lights-2: #d41a21; /*color - 2*/
-  --christmas-lights-3: #ffd27c; /*color - 3*/
+  --christmas-lights-1: #057d70;
+  /*color - 1*/
+  --christmas-lights-2: #d41a21;
+  /*color - 2*/
+  --christmas-lights-3: #ffd27c;
+  /*color - 3*/
   animation-duration: 2s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
@@ -91,7 +107,7 @@ input[type="text"]
 .christmas-lights[data-position="bottom"] {
   top: auto;
   bottom: -15px;
-  transform:scale(-1)
+  transform: scale(-1)
 }
 
 .christmas-lights[data-position="right"],
@@ -160,53 +176,62 @@ input[type="text"]
 }
 
 .christmas-lights li:nth-child(3n+1) {
-    animation-duration: 1.4s;
+  animation-duration: 1.4s;
 }
 
 @keyframes flash-1 {
-  0%, 100% {
-      background: var(--christmas-lights-1);
-      box-shadow: 0px 5px 24px 3px var(--christmas-lights-1);
+
+  0%,
+  100% {
+    background: var(--christmas-lights-1);
+    box-shadow: 0px 5px 24px 3px var(--christmas-lights-1);
   }
+
   50% {
-      background: var(--christmas-lights-2);
-      box-shadow: 0px 5px 24px 3px var(--christmas-lights-2);
+    background: var(--christmas-lights-2);
+    box-shadow: 0px 5px 24px 3px var(--christmas-lights-2);
   }
 }
 
 @keyframes flash-2 {
-  0%, 100% {
-      background: var(--christmas-lights-2);
-      box-shadow: 0px 5px 24px 3px var(--christmas-lights-2);
+
+  0%,
+  100% {
+    background: var(--christmas-lights-2);
+    box-shadow: 0px 5px 24px 3px var(--christmas-lights-2);
   }
+
   50% {
-      background: var(--christmas-lights-3);
-      box-shadow: 0px 5px 24px 3px var(--christmas-lights-3);
+    background: var(--christmas-lights-3);
+    box-shadow: 0px 5px 24px 3px var(--christmas-lights-3);
   }
 }
 
 @keyframes flash-3 {
-  0%, 100% {
-      background: var(--christmas-lights-3);
-      box-shadow: 0px 5px 24px 3px var(--christmas-lights-3);
+
+  0%,
+  100% {
+    background: var(--christmas-lights-3);
+    box-shadow: 0px 5px 24px 3px var(--christmas-lights-3);
   }
+
   50% {
-      background: var(--christmas-lights-1);
-      box-shadow: 0px 5px 24px 3px var(--christmas-lights-1);
+    background: var(--christmas-lights-1);
+    box-shadow: 0px 5px 24px 3px var(--christmas-lights-1);
   }
 }
 
-@media (max-width: 1024px){
-.christmas-lights[data-position="left"] {
+@media (max-width: 1024px) {
+  .christmas-lights[data-position="left"] {
     left: -14px;
-}
+  }
 
-.christmas-lights[data-position="right"] {
+  .christmas-lights[data-position="right"] {
     right: -14px;
-}
- 
-.christmas-lights[data-position="left"],
-.christmas-lights[data-position="right"] {
-  height: 100vh;
-}
+  }
+
+  .christmas-lights[data-position="left"],
+  .christmas-lights[data-position="right"] {
+    height: 100vh;
+  }
 }
