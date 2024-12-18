@@ -66,16 +66,24 @@ function genFirstName(firstName) {
 // Generate Christmas-themed middle name
 function genMiddleName(roadType, favColor) {
     switch (roadType) {
-        case 'road':
-            return `${favColor}ridge`; // ex: redridge
-        case 'street':
-            return `${favColor}son`; // ex: greenstone
-        case 'drive':
-            return `${favColor}man`; // ex: snowman
-        case 'avenue':
-            return `${favColor}berry`; // ex: redberry
-        case 'other':
-            return `${favColor}buddy`; // ex: greenbuddy
+        case 'dasher':
+            return `${favColor}snow`; // ex: redsnow
+        case 'dancer':
+            return `${favColor}twirl`; // ex: greentwirl
+        case 'prancer':
+            return `${favColor}jingle`; // ex: bluejingle
+        case 'vixen':
+            return `${favColor}glow`; // ex: goldglow
+        case 'comet':
+            return `${favColor}shine`; // ex: whiteshine
+        case 'cupid':
+            return `${favColor}heart`; // ex: redheart
+        case 'donner':
+            return `${favColor}blaze`; // ex: orangeblaze
+        case 'blitzen':
+            return `${favColor}flash`; // ex: purpleflash
+        case 'rudolph':
+            return `${favColor}nose`; // ex: greennose
         default:
             return ''; // or some other default value if needed
     }
@@ -171,4 +179,49 @@ function genFullName() {
 //capitalize function//
 function capitalize(input) {
     return input.charAt(0).toUpperCase() + input.slice(1).toLowerCase()
+
+//christmas lights that i copied from https://www.balbooa.com/help/tutorials/coding/interactions/christmas-lights-animation//
+
 }
+
+let christmas = {
+    delay: null,
+    delete: function(){
+        document.body.querySelectorAll('.christmas-lights').forEach(function(ul){
+            ul.remove();
+        });
+    },
+    create: function(){
+        let v = window.innerHeight / 60 + 2,
+            h = window.innerWidth / 60 + 2,
+            data = {
+                'top': h,
+                'right': v,
+                'bottom': h,
+                'left': v
+            },
+            ul = c = null;
+        for (let position in data) {
+            c = data[position];
+            ul = document.createElement('ul');
+            ul.className = 'christmas-lights';
+            ul.dataset.position = position;
+            for (let i = 0; i <= c; i++) {
+                ul.append(document.createElement('li'));
+            }
+            document.body.append(ul);
+        }
+    }
+}
+ 
+document.addEventListener('DOMContentLoaded', function(){
+    christmas.create();
+});
+ 
+window.addEventListener('resize', function(e) {
+    clearTimeout(christmas.delay);
+    christmas.delay = setTimeout(function(){
+        christmas.delete();
+        christmas.create();
+    }, 100)
+});

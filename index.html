@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/drl5ptu.css">
 </head>
 
 <body class="background-black">
@@ -19,58 +20,70 @@
     </header>
     <main>
         <div class="container-fluid size d-flex align-items-center justify-content-center">
-        <div class="container d-block text-white">
-            <!--Instrructions-->
-            <div class="text-center">
-                <h1><b>🎄Christmas Name Generator🎄</b></h1>
-                <h2>Fill out the form below to generate your fantasy name!</h2>
-            </div>
-            <!--Form section-->
-            <form id="fantasyForm" class="mb-4">
-                <!--get first name-->
-                <div class="my-3">
-                    <label for="firstName" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+            <div class="container d-block text-white moveitleft">
+                <!--Instrructions-->
+                <div class="text-center">
+                    <h1><b>🎄Christmas Name Generator🎄</b></h1>
+                    <h2>Fill out the form below to generate your fantasy name!</h2>
                 </div>
-                <!--get last name-->
-                <div class="my-3">
-                    <label for="lastName" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                <!--Form section-->
+                <form id="fantasyForm" class="mb-4">
+                    <div class="row my-3">
+                        <!--get first name-->
+                        <div class="col">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control display-1" id="firstName" placeholder="Enter your first name">
+                        </div>
+                        <!--get last name-->
+                        <div class="col">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                        </div>
+                    </div>
+                    <!--get favorite color-->
+                    <div class="row">
+                        <div class="col">
+                            <label for="favColor" class="form-label">Favorite Christmas Color</label>
+                            <input type="text" class="form-control" id="favColor" placeholder="Enter your favorite Chirstmas related color">
+                        </div>
+                         <!--get Favorite Animal-->
+                        <div class="col">
+                            <label for="favAnimal" class="form-label">Favorite Christmas Food</label>
+                            <input type="text" class="form-control" id="favAnimal"
+                                placeholder="Enter your favorite Christmas food">
+                        </div>
+                    </div>
+                   
+                   
+                    
+                    <!-- get road type-->
+                    <div class="my-3 w-75 mx-auto">
+                        <label for="roadType" class="form-label">Favorite Reindeer</label>
+                        <select id="roadType" class="form-select">
+                            <option value="cupid">Cupid</option>
+                            <option value="vixen">Vixen</option>
+                            <option value="dasher">Dasher</option>
+                            <option value="prancer">Prancer</option>
+                            <option value="comet">Comet</option>
+                            <option value="rudolph">Rudolph</option>
+                            <option value="blitzen">Blitzen</option>
+                            <option value="dancer">Dancer</option>
+                            <option value="donner">Donner</option>
+                        </select>
+                    </div>
+                    <!--submit button-->
+                    <div class="text-center mt-5">
+                        <div type="submit" class="btn" onclick="genFullName()">Generate Name</div>
+                    </div>
+                </form>
+                <!--generated output-->
+                <div class="result text-center" id="result">
+
                 </div>
-                <!--get favorite color-->
-                <div class="my-3">
-                    <label for="favColor" class="form-label">Favorite Color</label>
-                    <input type="text" class="form-control" id="favColor" placeholder="Enter your favorite color">
-                </div>
-                <!--get Favorite Animal-->
-                <div class="my-3">
-                    <label for="favAnimal" class="form-label">Favorite Christmas Food</label>
-                    <input type="text" class="form-control" id="favAnimal" placeholder="Enter your favorite Christmas food">
-                </div>
-                <!-- get road type-->
-                <div class="my-3">
-                    <label for="roadType" class="form-label">Choose Road Type</label>
-                    <select id="roadType" class="form-select">
-                        <option value="road">Road</option>
-                        <option value="street">Street</option>
-                        <option value="drive">Drive</option>
-                        <option value="avenue">Avenue</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <!--submit button-->
-                <div class="text-center mt-5">
-                    <div type="submit" class="btn" onclick="genFullName()">Generate Name</div>
-                </div>
-            </form>
-            <!--generated output-->
-            <div class="result text-center" id="result">
+
 
             </div>
-
-
         </div>
-    </div>
     </main>
     <footer>
         <!-- place footer here -->
