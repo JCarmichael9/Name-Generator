@@ -13,6 +13,12 @@
     background-position: 100%;
     color: #00bdf7;
   }
+  .result {
+    font-size: 40px;
+  }
+
   body {
-background-color: #000000;
+    background-image: url(imgs/CHIRSTMAS.jpg);
+    background-repeat: no-repeat;
+    
   }

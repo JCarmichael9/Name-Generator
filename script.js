@@ -164,7 +164,7 @@ function genFullName() {
     const capitalizedMiddleName = capitalize(middleName)
     const capitalizedLastName = capitalize(newLastName)
     //combine all the name variables into a full sentence//
-    const fullName = `${capitalizedPrefix} ${capitalizedFirstName} ${capitalizedMiddleName} ${capitalizedLastName} ${suffix}`
+    const fullName = `${capitalizedPrefix} ${capitalizedFirstName} ${capitalizedMiddleName} ${capitalizedLastName}${suffix}`
     //display new name//
     document.getElementById('result').textContent = fullName
 }
