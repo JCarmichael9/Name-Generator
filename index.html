@@ -18,11 +18,12 @@
         <!-- place navbar here -->
     </header>
     <main>
-        <div class="container text-white">
+        <div class="container-fluid size d-flex align-items-center justify-content-center">
+        <div class="container d-block text-white">
             <!--Instrructions-->
-            <div class="text-center my-5">
+            <div class="text-center">
                 <h1><b>🎄Christmas Name Generator🎄</b></h1>
-                <p>Fill out the form below to generate your fantasy name!</p>
+                <h2>Fill out the form below to generate your fantasy name!</h2>
             </div>
             <!--Form section-->
             <form id="fantasyForm" class="mb-4">
@@ -43,8 +44,8 @@
                 </div>
                 <!--get Favorite Animal-->
                 <div class="my-3">
-                    <label for="favAnimal" class="form-label">Favorite Animal</label>
-                    <input type="text" class="form-control" id="favAnimal" placeholder="Enter your favorite animal">
+                    <label for="favAnimal" class="form-label">Favorite Christmas Food</label>
+                    <input type="text" class="form-control" id="favAnimal" placeholder="Enter your favorite Christmas food">
                 </div>
                 <!-- get road type-->
                 <div class="my-3">
@@ -58,7 +59,7 @@
                     </select>
                 </div>
                 <!--submit button-->
-                <div class="text-center">
+                <div class="text-center mt-5">
                     <div type="submit" class="btn" onclick="genFullName()">Generate Name</div>
                 </div>
             </form>
@@ -69,6 +70,7 @@
 
 
         </div>
+    </div>
     </main>
     <footer>
         <!-- place footer here -->

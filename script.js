@@ -1,147 +1,147 @@
-//generate prefix//
+// Generate Christmas-themed prefix
 function genPrefix(firstName) {
     if (firstName.length > 5) {
-        return 'The Great'
+        return 'Elf'
     } else {
-        return 'Master'
+        return 'Frosty'
     }
 }
-//generate first name// 
+
+// Generate Christmas-themed first name
 function genFirstName(firstName) {
     const firstLetter = firstName.charAt(0).toLowerCase()
     if (firstLetter === 'a') {
-        return 'Bobby'
+        return 'Tinsel'
     } else if (firstLetter === 'b') {
-        return 'Paul'
+        return 'Jingle'
     } else if (firstLetter === 'c') {
-        return 'Hank'
+        return 'Blitzen'
     } else if (firstLetter === 'd') {
-        return 'Johnothan'
+        return 'Rudy'
     } else if (firstLetter === 'e') {
-        return 'Alexander'
+        return 'Icicle'
     } else if (firstLetter === 'f') {
-        return 'Jaquavious'
+        return 'Frosty'
     } else if (firstLetter === 'g') {
-        return 'Frank'
+        return 'Gingerbread'
     } else if (firstLetter === 'h') {
-        return 'Garry'
+        return 'Holly'
     } else if (firstLetter === 'i') {
-        return 'Larry'
+        return 'Ivy'
     } else if (firstLetter === 'j') {
-        return 'Phinneas'
+        return 'Jolly'
     } else if (firstLetter === 'k') {
-        return 'Ferb'
+        return 'Kringle'
     } else if (firstLetter === 'l') {
-        return 'Squidward'
+        return 'Snowflake'
     } else if (firstLetter === 'm') {
-        return 'Spongebob'
+        return 'Mistletoe'
     } else if (firstLetter === 'o') {
-        return 'Patrick'
+        return 'Noel'
     } else if (firstLetter === 'p') {
-        return 'Wyatt'
+        return 'Pine'
     } else if (firstLetter === 'q') {
-        return 'Hank'
+        return 'Quince'
     } else if (firstLetter === 'r') {
-        return 'James'
+        return 'Rudolph'
     } else if (firstLetter === 's') {
-        return 'Joseph'
+        return 'Snowball'
     } else if (firstLetter === 't') {
-        return 'Umar'
+        return 'Tinsel'
     } else if (firstLetter === 'u') {
-        return 'Seth'
+        return 'Underwood'
     } else if (firstLetter === 'v') {
-        return 'Zachary'
+        return 'Vixen'
     } else if (firstLetter === 'w') {
-        return 'Soren'
+        return 'Winter'
     } else if (firstLetter === 'x') {
-        return 'William'
+        return 'Xmas'
     } else if (firstLetter === 'y') {
-        return 'Squilliam'
+        return 'Yule'
     } else if (firstLetter === 'z') {
-        return 'Quinnen'
+        return 'Ziggy'
     }
 }
 
-//generate middle name//
+// Generate Christmas-themed middle name
 function genMiddleName(roadType, favColor) {
     switch (roadType) {
         case 'road':
-            return `${favColor}ridge`; // ex: blueridge
+            return `${favColor}ridge`; // ex: redridge
         case 'street':
-            return `${favColor}son`; // ex: blueson
+            return `${favColor}son`; // ex: greenstone
         case 'drive':
-            return `${favColor}man`; // ex: blueman
+            return `${favColor}man`; // ex: snowman
         case 'avenue':
-            return `${favColor}berry`; // ex: blueberry
+            return `${favColor}berry`; // ex: redberry
         case 'other':
-            return `${favColor}buddy`; // ex: bluebuddy
+            return `${favColor}buddy`; // ex: greenbuddy
         default:
             return ''; // or some other default value if needed
     }
-
 }
 
-//gen last name//
+// Generate Christmas-themed last name
 function genLastName(lastName) {
     const lastLetter = lastName.charAt(lastName.length - 1)
     if (lastLetter === 'a') {
-        return 'Storm'
-    } else if (lastLetter === 'b') {
-        return 'Shadow'
-    } else if (lastLetter === 'c') {
-        return 'Lightning'
-    } else if (lastLetter === 'd') {
-        return 'Rose'
-    } else if (lastLetter === 'e') {
-        return 'Thorn'
-    } else if (lastLetter === 'f') {
         return 'Snow'
-    } else if (lastLetter === 'g') {
+    } else if (lastLetter === 'b') {
+        return 'Blizzard'
+    } else if (lastLetter === 'c') {
+        return 'Holly'
+    } else if (lastLetter === 'd') {
+        return 'Jingle'
+    } else if (lastLetter === 'e') {
         return 'Frost'
+    } else if (lastLetter === 'f') {
+        return 'Winter'
+    } else if (lastLetter === 'g') {
+        return 'Ice'
     } else if (lastLetter === 'h') {
-        return 'Hurricane'
+        return 'Elf'
     } else if (lastLetter === 'i') {
-        return 'Tornado'
+        return 'Mistletoe'
     } else if (lastLetter === 'j') {
-        return 'Flash'
+        return 'Santa'
     } else if (lastLetter === 'k') {
-        return 'Moon'
+        return 'Kringle'
     } else if (lastLetter === 'l') {
-        return 'Sun'
+        return 'Noel'
     } else if (lastLetter === 'm') {
-        return 'Pluto'
+        return 'Tinsel'
     } else if (lastLetter === 'n') {
-        return 'Cloud'
+        return 'Snowflake'
     } else if (lastLetter === 'o') {
-        return 'Isometric'
+        return 'Reindeer'
     } else if (lastLetter === 'p') {
-        return 'Sky'
+        return 'Yule'
     } else if (lastLetter === 'q') {
-        return 'Awais'
+        return 'Gingerbread'
     } else if (lastLetter === 'r') {
-        return 'SkootleBob'
+        return 'Candycane'
     } else if (lastLetter === 's') {
-        return 'Skuttlebutt'
+        return 'Icicle'
     } else if (lastLetter === 't') {
-        return 'DoodleBob'
+        return 'Frostbite'
     } else if (lastLetter === 'u') {
-        return 'Jerry'
+        return 'Star'
     } else if (lastLetter === 'v') {
-        return 'McBadGuy'
+        return 'Vixen'
     } else if (lastLetter === 'w') {
-        return '(Son of Batman)'
+        return 'Snowball'
     } else if (lastLetter === 'x') {
-        return 'Robbery'
+        return 'Tinsel'
     } else if (lastLetter === 'y') {
-        return 'Arson'
+        return 'Jolly'
     } else if (lastLetter === 'z') {
-        return 'Mangione'
+        return 'Peppermint'
     }
 }
 
-//generTE SUFFIX//
+// Generate Christmas-themed suffix
 function genSuffix(favAnimal) {
-    return `, of the ${favAnimal} clan.`
+    return `, the ${favAnimal} cook.`
 }
 
 //master name build function//
