@@ -36,6 +36,8 @@ function genFirstName(firstName) {
         return 'Snowflake'
     } else if (firstLetter === 'm') {
         return 'Mistletoe'
+    } else if (firstLetter === 'n') {
+        return 'Evergreen'
     } else if (firstLetter === 'o') {
         return 'Noel'
     } else if (firstLetter === 'p') {

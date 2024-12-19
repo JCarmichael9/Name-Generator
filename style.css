@@ -16,7 +16,10 @@
 }
 
 .result {
-  font-size: 40px;
+  font-size: 3vw;
+  font-family: "wreath", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
@@ -62,8 +65,8 @@ input[type="text"] {
   font-style: normal;
 }
 
-select[type="form-select"] {
-  font-size: 24px;
+select {
+  font-size: 44px;
   font-family: "wreath", serif;
   font-weight: 700;
   font-style: normal;
