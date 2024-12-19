@@ -58,6 +58,10 @@ h2 {
   margin-left: 2vw;
 }
 
+input::placeholder{
+  color: white;
+}
+
 input[type="text"] {
   font-size: 24px;
   font-family: "wreath", serif;
