@@ -67,24 +67,17 @@ input[type="text"] {
   font-family: "wreath", serif;
   font-weight: 700;
   font-style: normal;
-  background-color: #057d70;
-  color: white;
+}
+input[type="text"]:active {
+  font-size: 24px;
+  font-family: "wreath", serif;
+  font-weight: 700;
 }
 input[type="text"]:active {
   font-size: 24px;
   font-family: "wreath", serif;
   font-weight: 700;
   font-style: normal;
-  background-color: #057d70;
-  color: white;
-}
-input[type="text"]:active {
-  font-size: 24px;
-  font-family: "wreath", serif;
-  font-weight: 700;
-  font-style: normal;
-  background-color: #057d70;
-  color: white;
 }
 
 .form-label {
@@ -99,7 +92,6 @@ select {
   font-family: "wreath", serif;
   font-weight: 700;
   font-style: normal;
-  background-color: #057d70;
 }
 
 
